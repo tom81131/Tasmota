@@ -547,8 +547,8 @@
   #define SHELLY_FW_UPGRADE                      // Add firmware upgrade option for co-processor (+3k4 code)
 //  #define SHELLY_VOLTAGE_MON                     // Add support for reading voltage and current measurment (-0k0 code)
 //#define USE_MAGIC_SWITCH                         // Add Sonoff MagicSwitch support as implemented in Sonoff Basic R4 (+612B flash, +64B IRAM for intr)
-//  #define MAGICSWITCH_MIN_PULSE  4000            // Overridable minimum pulse, also overridable by command MagicSwitchPulse (not saved to flash)
-//  #define MAGICSWITCH_MASKING_WINDOW_LEN  5      // Overridable masking window (in number of 50ms loops)
+#define MAGICSWITCH_MIN_PULSE  5000            // Overridable minimum pulse, also overridable by command MagicSwitchPulse (not saved to flash)
+#define MAGICSWITCH_MASKING_WINDOW_LEN  7      // Overridable masking window (in number of 50ms loops)
 
 // -- Optional light modules ----------------------
 #define USE_LIGHT                                // Add support for light control
